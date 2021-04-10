@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docter Appointment </title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url('img/doc.jpg');
+            background-size: 1200px auto;
+        }
+
+        .left {
+           /* border: 2px solid red;*/
+            display: inline-block;
+            top: 8px;
+            left: 60px;
+            font-size: 15px;
+            position: absolute;
+
+
+        }
+
+        .left img {
+            width: 70px;
+
+
+        }
+
+        .left div {
+            text-align: center;
+            color: blue;
+
+
+
+
+        }
+
+        .mid {
+            /*border: 2px solid green;*/
+            /*display: block;*/
+            width: 45%;
+            margin: 12px auto;
+
+
+        }
+
+        .navbar {
+            display: inline-block;
+            top: 30px;
+        }
+
+        .navbar li {
+            display: inline-block;
+            margin: auto;
+        }
+
+        .navbar li a {
+            color: grey;
+            text-decoration: none;
+            padding: 16px 16px;
+            font-size: 20px;
+
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            color: rgb(236, 8, 8);
+            text-decoration: none;
+            cursor: pointer;
+            padding: 15px 15px;
+            font-size: 20px;
+            text-decoration: underline;
+
+
+        }
+
+        .right {
+            /*border: 2px solid yellow;*/
+            position: absolute;
+            right: 70px;
+            display: inline-block;
+            top: 20px;
+        }
+
+        .btn {
+            background-color: blue;
+            height: 35px;
+            border: 2px solid grey;
+            cursor: pointer;
+            font-size: 15px;
+            border-radius: 5px;
+
+        }
+
+        .btn:hover {
+            background-color: white;
+        }
+
+        .container {
+            border: 2px solid black;
+            padding: 50px 50px;
+            width: 35%;
+            margin: 127px 45px;
+            border-radius: 15px;
+            float: right;
+
+        }
+
+        .formgroup input {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+            display: block;
+            width: 400px;
+            padding: 8px;
+            border: 2px solid black;
+            margin: 7px auto;
+            font-size: 15px;
+            border-radius: 8px;
+
+        }
+
+        .container {
+            text-align: center;
+            font-size: 28px;
+        }
+        .span{
+            text-decoration: underline;
+            color:red
+            
+        }
+        .span:hover{
+            color:black;
+            cursor: pointer;
+            
+            
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!--this is left-->
+        <div class="left">
+            <img src="img/doc2.png" alt="">
+            <div> Find Docter </div>
+        </div>
+
+        <!-- this is mid-->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Department</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Docter</a></li>
+                <li><a href="#"> Conatct us </a></li>
+
+            </ul>
+        </div>
+
+        <!-- this is right-->
+        <div class="right">
+            <Button class="btn"> MAKE APPOINTEMENT </Button>
+            <ul class="span">
+                <li><span href=""> Email </span></li>  
+                <li><span href=""> Conatct </span></li>
+            </ul>
+           
+
+        </div>
+
+
+    </header>
+    <div class="container">
+        <h3>Find the best Docter in Nichlaul </h3>
+        <form action="nobackend.php">
+            <div class="formgroup">
+                <input type="text" name="" id="" placeholder="Enter Your Name">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" id="" placeholder="Enter Your Gender">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" id="" placeholder="Enter Your locality">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" id="" placeholder="Enter Your Conatct Number">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" id="" placeholder="Enter Your Email id">
+
+            </div>
+            <Button class="btn">Submit now</Button>
+
+
+        </form>
+    </div>
+
+</body>
+
+</html>
